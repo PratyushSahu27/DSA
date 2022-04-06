@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "iostream": "cpp",
+        "array": "cpp",
+        "fstream": "cpp",
+        "shared_mutex": "cpp",
+        "sstream": "cpp",
+        "tuple": "cpp",
+        "vector": "cpp"
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
+}
