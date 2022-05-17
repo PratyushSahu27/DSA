@@ -1,0 +1,17 @@
+void dfs(TreeNode* original, TreeNode* cloned, TreeNode*& ans, TreeNode* target){
+        if(!original)
+            return;
+        if(original == target)
+            ans = cloned;
+        
+        dfs(original->left, cloned->left, ans, target);
+        dfs(original->right, cloned->right, ans, target);
+        return;
+            
+    }
+    
+    TreeNode* getTargetCopy(TreeNode* original, TreeNode* cloned, TreeNode* target) {
+        TreeNode* ans = nullptr;
+        dfs(original, cloned, ans, target);
+        return ans;
+    }
