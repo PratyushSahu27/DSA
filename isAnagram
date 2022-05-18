@@ -1,0 +1,20 @@
+bool isAnagram(string s, string t) {
+        if(s.size() != t.size())
+            return false;
+        map<char, int> ms, mt;
+        for(auto i : s){
+            if(!ms[i])
+                ms[i] = 1;
+            else
+                ms[i]+=1;
+        }
+        for(auto i : t){
+            if(!mt[i])
+                mt[i] = 1;
+            else
+                mt[i]+=1;
+        }
+        if(ms==mt)
+            return true;
+        return false;
+    }
